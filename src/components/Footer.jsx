@@ -28,11 +28,18 @@ const Footer = ()=>{
           <div className="right">
             <h4>About me </h4>
             <p>This is just a wbsite for my information .I enjoy creating and designing  websites </p>
-            <div className="social">
-            <FaFacebook size={20} style={{color :"#fff", marginRight: "2rem"}}/>
-            <FaTwitter size={20} style={{color :"#fff", marginRight: "2rem"}}/>
-            <FaLinkedin size={20} style={{color :"#fff", marginRight: "2rem"}}/>
-            </div>
+           <div className="social">
+  <a href="#" target="_blank" rel="noopener noreferrer">
+    <FaFacebook size={20} style={{ color: "#fff", marginRight: "2rem" }} />
+  </a>
+  <a href="https://x.com/AbhishekGorde5" target="_blank" rel="noopener noreferrer">
+    <FaTwitter size={20} style={{ color: "#fff", marginRight: "2rem" }} />
+  </a>
+  <a href="https://www.linkedin.com/in/abhishek-gorde-5b849b2a0" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin size={20} style={{ color: "#fff", marginRight: "2rem" }} />
+  </a>
+</div>
+
           </div>
         </div>
       </div>

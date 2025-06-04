@@ -56,3 +56,32 @@
  height: 100%;
  width: 100%;
 }
+/* ✅ Responsive Fixes for Small Screens */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .about .left, 
+  .about .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .right .img-container {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .right .img {
+    width: 90%;
+    height: auto;
+  }
+}
