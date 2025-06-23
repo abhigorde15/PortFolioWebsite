@@ -1,54 +1,129 @@
-.project-heading{
-  text-align: center;
-  padding: 4rem 0 2rem 0;
-}
-.project-container{
-  max-width: 1140px;
+.project-container {
+  max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 40px;
-  padding-bottom: 5rem;
-}
-.project-card{
-  background: #1a1919;
-  padding: 1.2rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.project-card img{
-  width: 100%;
-}
-.project-title{
-  color: white;
-  padding: 1rem 0;
-}
-.pro-btns{
+.project-card {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  flex-direction: column;
+  color: #fff;
+  animation: fadeInUp 1s ease forwards;
+  transform: translateY(40px);
+  opacity: 0;
 }
-.pro-btns .btn{
-  padding: 0.5rem 1rem;
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
 }
-.pro-details p{
-  padding-bottom: 1rem;
-  font-size: 1.1rem;
+
+.img-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #000;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.card-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
   text-align: justify;
 }
-@media screen and (max-width: 740px) { 
-  .project-container { 
-    grid-template-columns: 1fr; 
-    grid-gap: 20px;
-    padding: 0 2rem;
-   } 
-   .project-card { padding: 1rem;
-   } .pro-btns { 
-    flex-direction: column;
-    align-items: center; 
-  } 
-  .pro-btns .btn {
-    margin-bottom: 0.5rem; 
-    width: 100%;  
-    text-align: center;
-   }
- }
+
+/* 🔹 Pill-style skills */
+.skill-pill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background-color: #0ff2;
+  color: #0ff;
+  border: 1px solid #0ff6;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  backdrop-filter: blur(3px);
+  transition: 0.3s;
+}
+
+.skill-pill:hover {
+  background-color: #0ff4;
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.pro-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.pro-btns .btn {
+  flex: 1;
+  background-color: #0ff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.pro-btns .btn:hover {
+  background-color: #00e6e6;
+}
+
+/* ✨ Animation */
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-container {
+    height: 200px;
+  }
+
+  .skill-pill {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
+}
