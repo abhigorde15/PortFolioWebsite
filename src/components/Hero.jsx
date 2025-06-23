@@ -7,17 +7,18 @@ function Hero(){
     <div className='hero-img'>
       <img className='start-img' src={firstImg} alt='IntroImg' />
     </div>
-    <div className='content'>
-      <p>Hi,I am a Aspiring Software Enginner.</p>
-      <h1>Java Developer</h1>
+   <div className='content'>
+  <p>Hi, I am a passionate</p>
+  <h1>Java Developer & AI Learner</h1>
      <div>
       <Link to="./projects" className="btn">
          Projects
       </Link>
 
-      <Link to="./contact" className="btn btn-light">
-         Contact
-      </Link>
+      <a href="/Abhishek_resume_new.pdf.pdf" className="btn btn-light" download>
+  Resume
+</a>
+
      </div>
     </div>
     

@@ -1,3 +1,6 @@
+.work-container{
+  background: linear-gradient(to bottom, #000, #0a0a23);
+}
 .project-container {
   max-width: 1200px;
   margin: auto;
@@ -12,7 +15,6 @@
   backdrop-filter: blur(8px);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.4s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -22,10 +24,7 @@
   opacity: 0;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
-}
+
 
 .img-container {
   width: 100%;
@@ -53,6 +52,7 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: 600;
+  
 }
 
 .project-text {
@@ -70,8 +70,8 @@
 }
 
 .skill-pill {
-  background-color: #0ff2;
-  color: #0ff;
+  background-color: rgba(103, 106, 183, 0.133);
+  color: white
   border: 1px solid #0ff6;
   padding: 4px 12px;
   font-size: 0.85rem;
@@ -81,7 +81,7 @@
 }
 
 .skill-pill:hover {
-  background-color: #0ff4;
+  background-color: rgba(105, 118, 201, 0.267);
   transform: scale(1.05);
 }
 
@@ -95,7 +95,7 @@
 
 .pro-btns .btn {
   flex: 1;
-  background-color: #0ff;
+  background-color: rgb(100, 128, 188);
   color: #000;
   font-weight: 600;
   text-decoration: none;
@@ -106,7 +106,7 @@
 }
 
 .pro-btns .btn:hover {
-  background-color: #00e6e6;
+  background-color: #3f54a9;
 }
 
 /* ✨ Animation */
@@ -126,4 +126,9 @@
     font-size: 0.75rem;
     padding: 3px 10px;
   }
+}
+.project-heading{
+  text-align: center;
+  padding-top:64px;
+  padding-bottom: 32px;
 }

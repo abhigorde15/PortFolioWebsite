@@ -6,17 +6,17 @@ function Education() {
     {
       institute: "K.K. Wagh Institute of Engineering Education and Research",
       grade: "9.13 CGPA (Till Now)",
-      year: "2022 – 2026 (Pursuing)"
+      year: "2023 – 2027 (Pursuing)"
     },
     {
-      institute: "K.M.P. College of Science",
+      institute: "K.M.P. College of Science & Arts Balanagar",
       grade: "12th - 83%",
-      year: "2020 – 2022"
+      year: "2022-2023"
     },
     {
       institute: "Shri Saraswati Bhuvan High School, Balanagar",
       grade: "10th - 89%",
-      year: "2010 – 2020"
+      year: "2020 – 2021"
     }
   ];
 

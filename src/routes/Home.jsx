@@ -3,15 +3,17 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer"
 import Work from "../components/Work"
 import Education from '../components/Education'
-import Expertise from "../components/Expertise";
+import Skills from "../components/Skills";
+import Certifications from "../components/Certifications";
 const Home = ()=>{
   return (
-      <div>
+      <div >
         <Navbar/>
         <Hero/>
-        <Expertise />
+        <Skills />
         <Education />
         <Work />
+        <Certifications />
         <Footer/>
       </div>
   )

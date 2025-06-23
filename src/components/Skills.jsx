@@ -1,20 +1,18 @@
 
-import "./Expertise.css";
+import "./Skills.css";
 import reactLogo from "../assets/expertiseIcons/react.png";
-import nodeLogo from "../assets/expertiseIcons/java.png";
+import htmlLogo from "../assets/expertiseIcons/html.png";
 import jsLogo from "../assets/expertiseIcons/js.png";
-import expressLogo from "../assets/expertiseIcons/css.png";
-import nextLogo from "../assets/expertiseIcons/html.png";
-import flaskLogo from "../assets/expertiseIcons/python.png";
-import djangoLogo from "../assets/expertiseIcons/js.png";
-import pythonLogo from "../assets/expertiseIcons/react.png";
-import javaLogo from "../assets/expertiseIcons/react.png";
-import androidLogo from "../assets/expertiseIcons/react.png";
-import cppLogo from "../assets/expertiseIcons/react.png";
-import githubLogo from "../assets/expertiseIcons/react.png";
-import gitLogo from "../assets/expertiseIcons/react.png";
+import spring from "../assets/expertiseIcons/spring.png";
+import css from "../assets/expertiseIcons/css.png";
+import pandas from "../assets/expertiseIcons/pandas.png";
+import numpy from "../assets/expertiseIcons/numpy.png";
+import pythonLogo from "../assets/expertiseIcons/python.png";
+import javaLogo from "../assets/expertiseIcons/java.png";
+import springboot from "../assets/expertiseIcons/springboot.png";
+import cppLogo from "../assets/expertiseIcons/cpp.png";
 
-const Expertise = () => {
+const Skills = () => {
   return (
     <section className="expertise-section">
       <h2 className="expertise-title">
@@ -80,42 +78,38 @@ const Expertise = () => {
           <span>React</span>
         </div>
         <div className="circle next">
-          <img src={nextLogo} alt="Next.js" />
-          <span>Next.js</span>
+          <img src={css} alt="Next.js" />
+          <span>CSS</span>
         </div>
         <div className="circle express">
-          <img src={expressLogo} alt="Express" />
-          <span>Express</span>
+          <img src={spring} alt="Express" />
+          <span>Spring Framwork</span>
         </div>
         <div className="circle node">
-          <img src={nodeLogo} alt="Node.js" />
-          <span>Node.js</span>
+          <img src={htmlLogo} alt="Node.js" />
+          <span>HTML</span>
         </div>
 
         {/* Python Children */}
         <div className="circle flask">
-          <img src={flaskLogo} alt="Flask" />
-          <span>Flask</span>
+          <img src={numpy} alt="Flask" />
+          <span>Numpy</span>
         </div>
         <div className="circle django">
-          <img src={djangoLogo} alt="Django" />
-          <span>Django</span>
+          <img src={pandas} alt="Django" />
+          <span>Pandas</span>
         </div>
 
         {/* Java Children */}
         <div className="circle android">
-          <img src={androidLogo} alt="Android" />
-          <span>Android</span>
+          <img src={springboot} alt="Android" />
+          <span>Spring Boot</span>
         </div>
       </div>
 
-      <div className="other-expertise">
-        <h3>Other Expertise:</h3>
-        <div className="badge"><img src={githubLogo} alt="GitHub" /> GitHub</div>
-        <div className="badge"><img src={gitLogo} alt="Git" /> Git</div>
-      </div>
+     
     </section>
   );
 };
 
-export default Expertise;
+export default Skills;
