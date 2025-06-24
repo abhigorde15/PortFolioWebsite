@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const WorkCard = (props) => {
   return (
-    <div className="project-card fancy-fade">
+    <div className="project-card ">
       <div className="img-container">
         <img src={props.imgSrc} alt="project-screenshot" />
       </div>
@@ -22,10 +22,10 @@ const WorkCard = (props) => {
         </div>
 
         <div className="pro-btns">
-          <Link to={props.view} className="btn">
+          <Link to={props.view} className="btn" target="_blank">
             VIEW
           </Link>
-          <Link to="https://github.com" className="btn">
+          <Link to="https://github.com/abhigorde15" className="btn" target="_blank">
             SOURCE
           </Link>
         </div>

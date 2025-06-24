@@ -121,3 +121,59 @@
   width: 20px;
   height: 20px;
 }
+/* Hide card layout by default (shown only in mobile) */
+.mobile-skills {
+  display: none;
+}
+
+/* Each skill card */
+.skill-card {
+  background-color: #1e1e2f;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.2);
+}
+
+.skill-card h3 {
+  color: #00ffff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card-skills img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+.card-skills img:hover {
+  transform: scale(1.2);
+}
+/* Responsive: switch to card layout on small screens */
+@media (max-width: 768px) {
+  .graph-container {
+    display: none;
+  }
+
+  .mobile-skills {
+    display: block;
+  }
+
+  .expertise-title span {
+    font-size: 2.2rem;
+  }
+  .card-skills div p{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+}

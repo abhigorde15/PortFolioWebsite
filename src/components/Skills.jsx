@@ -18,6 +18,81 @@ const Skills = () => {
       <h2 className="expertise-title">
         <span>Skills</span>
       </h2>
+      {/* Mobile-friendly cards */}
+<div className="mobile-skills">
+  <div className="skill-card">
+    <h3>Programming Languages</h3>
+    <div className="card-skills">
+      <div>
+       <img src={javaLogo} alt="Java" />
+       <p>Java</p>
+      </div>
+      <div>
+        <img src={cppLogo} alt="C++" />
+        <p>C++</p>
+      </div>
+      <div>
+       <img src={pythonLogo} alt="Python" />
+       <p>Python</p>
+      </div>
+      <div>
+         <img src={jsLogo} alt="JavaScript" />
+         <p>Javascript</p>
+      </div>
+     
+    </div>
+  </div>
+
+  <div className="skill-card">
+    <h3>Frontend</h3>
+    <div className="card-skills">
+      <div>
+        <img src={reactLogo} alt="React" />
+        <p>Rect.js</p>
+      </div>
+      <div>
+        <img src={css} alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div>
+      <img src={htmlLogo} alt="HTML" />
+      <p>HTML</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div className="skill-card">
+    <h3>Backend</h3>
+    <div className="card-skills">
+      <div>
+        <img src={spring} alt="Spring" />
+        <p>Spring</p>
+      </div>
+      
+      <div>
+         <img src={springboot} alt="Spring Boot" />
+         <p>Spring Boot</p>
+      </div>
+     
+    </div>
+  </div>
+
+  <div className="skill-card">
+    <h3>AI / ML</h3>
+    <div className="card-skills">
+      <div>
+         <img src={numpy} alt="NumPy" />
+         <p>Numpy</p>
+      </div>
+      <div>
+       <img src={pandas} alt="Pandas" />
+       <p>Pandas</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
       <div className="graph-container">
         <div className="center-node">Skills</div>

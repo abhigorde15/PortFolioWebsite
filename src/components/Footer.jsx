@@ -1,4 +1,4 @@
-import { FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter } from "react-icons/fa"
+import { FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter, FaGithub } from "react-icons/fa"
 import "./FooterStyle.css"
 const Footer = ()=>{
   return (
@@ -37,7 +37,12 @@ const Footer = ()=>{
   </a>
   <a href="https://www.linkedin.com/in/abhishek-gorde-5b849b2a0" target="_blank" rel="noopener noreferrer">
     <FaLinkedin size={20} style={{ color: "#fff", marginRight: "2rem" }} />
+    
   </a>
+  <a target="_blank" href="https://github.com/abhigorde15">
+<FaGithub size={20}/>
+  </a>
+  
 </div>
 
           </div>
