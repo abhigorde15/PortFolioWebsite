@@ -11,7 +11,8 @@ import pythonLogo from "../assets/expertiseIcons/python.png";
 import javaLogo from "../assets/expertiseIcons/java.png";
 import springboot from "../assets/expertiseIcons/springboot.png";
 import cppLogo from "../assets/expertiseIcons/cpp.png";
-
+import mysql from "../assets/expertiseIcons/mysql.png";
+import tensorflow from "../assets/expertiseIcons/tensorflow.png"
 const Skills = () => {
   return (
     <section className="expertise-section">
@@ -89,7 +90,20 @@ const Skills = () => {
        <img src={pandas} alt="Pandas" />
        <p>Pandas</p>
       </div>
+      <div>
+       <img src={tensorflow} alt="tensorflow" />
+       <p>Tensorflow</p>   
+      </div>
       
+    </div>
+  </div>
+  <div className="skill-card">
+    <h3>Databases</h3>
+    <div className="card-skills">
+      <div>
+         <img src={mysql} alt="mysql" />
+         <p>MySql</p>
+      </div>   
     </div>
   </div>
 </div>
@@ -152,32 +166,32 @@ const Skills = () => {
           <img src={reactLogo} alt="React" />
           <span>React</span>
         </div>
-        <div className="circle next">
-          <img src={css} alt="Next.js" />
+        <div className="circle css">
+          <img src={css} alt="css" />
           <span>CSS</span>
         </div>
-        <div className="circle express">
-          <img src={spring} alt="Express" />
+        <div className="circle spring">
+          <img src={spring} alt="spring" />
           <span>Spring Framwork</span>
         </div>
-        <div className="circle node">
+        <div className="circle html">
           <img src={htmlLogo} alt="Node.js" />
           <span>HTML</span>
         </div>
 
         {/* Python Children */}
-        <div className="circle flask">
-          <img src={numpy} alt="Flask" />
+        <div className="circle numpy">
+          <img src={numpy} alt="numpy" />
           <span>Numpy</span>
         </div>
-        <div className="circle django">
-          <img src={pandas} alt="Django" />
+        <div className="circle pandas">
+          <img src={pandas} alt="pandas" />
           <span>Pandas</span>
         </div>
 
         {/* Java Children */}
-        <div className="circle android">
-          <img src={springboot} alt="Android" />
+        <div className="circle boot">
+          <img src={springboot} alt="boot" />
           <span>Spring Boot</span>
         </div>
       </div>

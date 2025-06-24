@@ -60,18 +60,18 @@
 /* JavaScript and its children */
 .js       { top: 25%; left: 25%; }
 .react    { top: 45%; left: 20%; }
-.node     { top: 20%; left: 5%; }
-.express  { top: 90%; left: 20%; }
-.next     { top: 5%; left: 25%; }
+.html     { top: 20%; left: 5%; }
+.spring  { top: 90%; left: 20%; }
+.css     { top: 5%; left: 25%; }
 
 /* Python and its children */
 .python   { top: 35%; left: 60%; }
-.flask    { top: 15%; left: 67%; }
-.django   { top: 55%; left: 75%; }
+.numpy    { top: 15%; left: 67%; }
+.pandas   { top: 55%; left: 75%; }
 
 /* Java and its child */
 .java     { top: 70%; left: 30%; }
-.android  { top: 90%; left: 40%; }
+.boot  { top: 90%; left: 40%; }
 
 /* Other */
 .cpp      { top: 70%; left: 60%; }
